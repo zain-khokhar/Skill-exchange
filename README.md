@@ -51,7 +51,6 @@ In Strapi admin panel > Settings > Roles:
 Skill Exchange/
 ├── frontend/    # Next.js application
 ├── backend/     # Strapi CMS
-├── doc/         # Documentation (Roman Urdu)
 └── README.md
 ```
 
