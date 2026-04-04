@@ -1,0 +1,43 @@
+Project Domain / Category 
+Community Skills Exchange Platform 
+Web Programming 
+Abstract / Introduction 
+Many people have valuable skills (e.g., web design, tutoring, photography, cooking lessons), but 
+they cannot always afford to pay for services they need. There’s a gap between people who 
+want to learn or receive help and those who can provide it. 
+The proposed solution is a web-based application that enables people to exchange skills, 
+services, or knowledge without money, using a time/skills bartering system. Users can create 
+profiles, list the skills they offer, and request skills they need in return. The system will support 
+matching, booking, communication, and feedback features to ensure smooth exchanges within 
+the community. 
+Functional Requirements: 
+Functional Requirements 
+1. User registration, login, and profile management. 
+2. Ability for users to list offered skills and request needed skills. 
+3. Browse, search, and filter skills by category, location, or keywords. 
+4. Booking/request system for arranging skill exchanges. 
+5. Email notifications (confirmation, booking, reminders). 
+6. Rating and review system after each exchange. 
+7. Role-based access: user, admin, and editor. 
+8. Admin dashboard for managing users, skills, and reports of abuse. 
+9. Content management (FAQ, About, Policies) through Strapi CMS. 
+Following will be the main features of this application 
+User Side 
+ Signup/Login (JWT-based authentication). 
+ User dashboard with profile, offered skills, and requested skills. 
+ Search and filter services by categories (IT, Arts, Education, Household, etc.). 
+ Book skill exchanges by generating Notifications and Emails. 
+ Review and rating system. 
+Admin Side (via Strapi CMS) 
+ Manage users, skills, and categories. 
+ Approve/reject skill posts. 
+ View reports of abuse. 
+ Manage static content (FAQ, About, Policies). 
+Tools:  
+ Frontend: Next.js 15, React 19, TailwindCSS, shadcn/ui or Bootstrap. 
+ Backend / CMS: Strapi v5. 
+ Database: PostgreSQL or MongoDB. 
+ Authentication: JWT-based authentication (role-based). 
+ Media Storage: Cloudinary (for skill images, profile pictures). 
+ Email Service: Strapi Email Plugin (SMTP/Gmail/SendGrid). 
+ Development Tools: Visual Studio Code, GitHub, Postman, Node.js. 

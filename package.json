@@ -1,0 +1,19 @@
+{
+  "name": "skill-exchange",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Community Skills Exchange Platform - Full Stack (Next.js + Strapi)",
+  "scripts": {
+    "dev": "concurrently --names backend,frontend --prefix-colors blue,green \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run develop",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd backend && npm run build && cd ../frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
