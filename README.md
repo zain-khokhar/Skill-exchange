@@ -55,7 +55,3 @@ Skill Exchange/
 └── README.md
 ```
 
-## Documentation
-
-See the `doc/` folder for detailed documentation in Roman Urdu covering all aspects of the project.
-
