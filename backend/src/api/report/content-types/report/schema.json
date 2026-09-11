@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reports",
+  "info": {
+    "singularName": "report",
+    "pluralName": "reports",
+    "displayName": "Report",
+    "description": "Abuse reports submitted by users"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reason": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1000
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["pending", "reviewed", "resolved", "dismissed"],
+      "default": "pending",
+      "required": true
+    },
+    "adminNotes": {
+      "type": "text",
+      "maxLength": 1000
+    },
+    "reporter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "reportedUser": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "reportedSkill": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::skill.skill"
+    }
+  }
+}

@@ -29,6 +29,22 @@ jspm_packages/
 # dotenv environment variables files
 .env
 .env.*
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# Strapi cache & DB
+.tmp/
+backend/.tmp/
+.strapi/
+backend/.strapi/
+*.sqlite
+*.sqlite3
+*.db
+.strapi-updater.json
+backend/.strapi-updater.json
+.strapi-cloud.json
+backend/.strapi-cloud.json
 
 # next.js build output
 .next/
@@ -65,6 +81,7 @@ backend/public/uploads/
 
 # Python virtual environment
 venv/
+.venv/
 __pycache__/
 *.pyc
 *.pyo
